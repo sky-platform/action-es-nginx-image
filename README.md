@@ -1,0 +1,1 @@
+# action-es-nginx-image
