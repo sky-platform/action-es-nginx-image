@@ -1,0 +1,15 @@
+# action.yml
+name: 'Build es nginx Image'
+author: 'Sky'
+description: 'Use alpine go build go main'
+inputs:
+  static-web-dir:
+    description: 'path to static web dir.'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.static-web-dir }}
+  
